@@ -25,6 +25,7 @@ public class RtcActivity extends Activity implements WebRtcClient.RtcListener {
     private static final int LOCAL_X_CONNECTING = 0;
     private static final int LOCAL_Y_CONNECTING = 0;
     private static final int LOCAL_WIDTH_CONNECTING = 100;
+	
     private static final int LOCAL_HEIGHT_CONNECTING = 100;
     // Local preview screen position after call is connected.
     private static final int LOCAL_X_CONNECTED = 72;
@@ -48,6 +49,7 @@ public class RtcActivity extends Activity implements WebRtcClient.RtcListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
+		
         getWindow().addFlags(
                 LayoutParams.FLAG_FULLSCREEN
                         | LayoutParams.FLAG_KEEP_SCREEN_ON
